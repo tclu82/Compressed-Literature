@@ -35,11 +35,6 @@ public class Main {
 	 * @throws IOException
 	 */
 	public static void main(String[] theArgs) throws IOException {
-		
-		
-		// test 123
-		
-		
 		long startTime = System.currentTimeMillis();
 		FileReader input = null;
 		PrintStream output1 = new PrintStream(new File(OUTPUT_1));
