@@ -33,13 +33,14 @@ public class MyPriorityQueue <T extends Comparable<T>> {
      * @param item 
      */
     public void offer(T item) {
+    	/** always add as the bottom right child */
         myList.add(item);
-        mySize += 1; 
+        mySize++; 
         
         for (int k = mySize; k > 1; k /= 2) {
         	
-        	/** Swap, make PriorityQueue happen */
-            if (item.compareTo(myList.get(k / 2)) < 0) {
+        	/** compare to parent (k/2) */
+            if (item.compareTo(myList.get(k / 2)) < 0) { 
                 final T temp = myList.get(k);
                 myList.set(k, myList.get(k / 2));
                 myList.set(k / 2, temp);
@@ -59,6 +60,7 @@ public class MyPriorityQueue <T extends Comparable<T>> {
         
         else {
             final T item = myList.get(1);
+            /** Swap root and leaf, then remove the leaf */
             myList.set(1, myList.get(mySize)); 
             myList.remove(mySize);             
             mySize--;
@@ -73,7 +75,7 @@ public class MyPriorityQueue <T extends Comparable<T>> {
      * Implement MyPQ with Heap structure.
      */
     private void heapify() {
-        final T last = myList.get(1);
+        final T parent = myList.get(1);
         int child = 1;
         int index = 1;
         
@@ -83,7 +85,7 @@ public class MyPriorityQueue <T extends Comparable<T>> {
             if (child < mySize && (myList.get(child).compareTo(myList.get(child + 1))) > 0) 
             	child++;
             
-            if (last.compareTo(myList.get(child)) > 0) {
+            if (parent.compareTo(myList.get(child)) > 0) {
                 final T temp = myList.get(index);
                 myList.set(index, myList.get(child));
                 myList.set(child, temp);
