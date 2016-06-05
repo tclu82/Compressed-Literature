@@ -27,7 +27,7 @@ public class Main {
 	
 	/** Output file for compression. */
 	private static final String OUTPUT_2 = "compressed.txt";
-
+	
 	/**
 	 * Main method.
 	 * 
