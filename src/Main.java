@@ -18,7 +18,10 @@ import java.util.BitSet;
  * @version Winter 2016
  */
 public class Main {
-	
+
+
+	// rewrite on 20160623
+
 	/** The book is used to test. */
 	private static final String THE_BOOK = "WarAndPeace.txt";
 	
