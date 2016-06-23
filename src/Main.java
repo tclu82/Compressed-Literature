@@ -30,7 +30,7 @@ public class Main {
 	
 	/**
 	 * Main method.
-	 * 
+	 *
 	 * @param theArgs
 	 * @throws IOException
 	 */
