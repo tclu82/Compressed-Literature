@@ -19,9 +19,6 @@ import java.util.BitSet;
  */
 public class Main {
 
-
-	// rewrite on 20160623
-
 	/** The book is used to test. */
 	private static final String THE_BOOK = "WarAndPeace.txt";
 	
@@ -88,7 +85,7 @@ public class Main {
 			System.out.println("Compressed file size: " + (int) compressed + " bytes");
 			System.out.printf("Compression ratio: %.2f", compressed * 100 / original);
 			System.out.println("%\nRunning Time: " + duration + " milliseconds");
-		}  catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}

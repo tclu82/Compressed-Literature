@@ -172,6 +172,8 @@ public class CodingTree {
 		public HuffmanTreeNode(char theChar, int theFreq) {
 			myKey = theChar;
 			myFreq = theFreq;
+			myLeft = null;
+            myRight = null;
 		}
 		
 		/**
@@ -205,8 +207,7 @@ public class CodingTree {
 		/**
 		 * Compares 2 nodes for PriorityQueue.
 		 * 
-		 * @param theHTN1 
-		 * @param theHTN2
+		 * @param theOther
 		 */
 		@Override
 		public int compareTo(HuffmanTreeNode theOther) {
