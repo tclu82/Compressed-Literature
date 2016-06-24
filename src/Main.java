@@ -35,15 +35,14 @@ public class Main {
 	 * @throws IOException
 	 */
 	public static void main(String[] theArgs) throws IOException {
-		long startTime = System.currentTimeMillis();
-		FileReader input = null;
-		PrintStream output1 = new PrintStream(new File(OUTPUT_1));
+        long startTime = System.currentTimeMillis();
+        FileReader input = null;
+        PrintStream output1 = new PrintStream(new File(OUTPUT_1));
 		
 		/** FileOutputStream can write a byte array. */
-		FileOutputStream output2 = new FileOutputStream(new File(OUTPUT_2));
-		
-		try {
-			input = new FileReader(THE_BOOK);
+        FileOutputStream output2 = new FileOutputStream(new File(OUTPUT_2));
+        try {
+            input = new FileReader(THE_BOOK);
             StringBuilder message = new StringBuilder();
             int c;
 
