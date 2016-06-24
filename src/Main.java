@@ -44,8 +44,8 @@ public class Main {
 		
 		try {
 			input = new FileReader(THE_BOOK);
-			StringBuilder message = new StringBuilder();
-			int c;
+            StringBuilder message = new StringBuilder();
+            int c;
 
 			/** Read characters from the file into a string. */
 			while ((c = input.read()) != -1) {
