@@ -84,8 +84,8 @@ public class Main {
             System.out.println("Compressed file size: " + (int) compressed + " bytes");
             System.out.printf("Compression ratio: %.2f", compressed * 100 / original);
             System.out.println("%\nRunning Time: " + duration + " milliseconds");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 	}
 }
